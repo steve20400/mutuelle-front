@@ -23,7 +23,7 @@ jobs:
     env:
       # Expo remplace les variables EXPO_PUBLIC_* dans le bundle au moment du build,
       # et non a l'execution. Elle doit donc etre presente des la compilation.
-      EXPO_PUBLIC_API_URL: ${{ inputs.api_url || vars.API_URL }}
+      EXPO_PUBLIC_API_URL: ${{ inputs.api_url || vars.API_URL || 'https://mutuelle-back.onrender.com' }}
 
     steps:
       - name: Recuperer le code

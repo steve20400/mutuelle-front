@@ -3,9 +3,9 @@ export const APP_NAME = 'Mutuelle';
 // iOS/Android device physique (même WiFi que la machine hôte) : utiliser l'IP de la machine
 // Émulateur Android : http://10.0.2.2:8080
 // Simulateur iOS    : http://localhost:8080
-// Production        : https://mutuelle-mobile-api-2025.onrender.com
+// Production        : https://mutuelle-back.onrender.com
 export const API_BASE_URL =
-  process.env.EXPO_PUBLIC_API_URL ?? 'https://mutuelle-mobile-api-2025.onrender.com';
+  process.env.EXPO_PUBLIC_API_URL ?? 'https://mutuelle-back.onrender.com';
 
 export const SECURE_STORE_KEYS = {
   ACCESS_TOKEN: 'mutuelle_access_token',
